@@ -1,41 +1,46 @@
 <!DOCTYPE html>
+<html lang="es">
 <head>
-	<html lang="es">
 	<meta charset="UTF-8">
+	<!-- <link rel="stylesheet" href="css/style.css"> -->
 	<link rel="stylesheet" href="css/style.css">
 	<title>Mi desafio ONE-01</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimun-scale=1.0">
 </head>
 <body>
-	<header>
-		<h2 class="box2">Alura-ONE / Encriptar - Desencriptar / JavaScript</h2>
-	</header>
-	<main class="main">
-  		<section class="form box">
-  			<form id="form1" runat="server">
-  				<label for="input-texto">Solo se permiten letras minúsculas, sin acento</label>
-   			</p>
-				<label>Mensaje Original:</label>
-				<input class="text-input" type="text" id="txt1" placeholder="Ingrese el texto a convertir">
-				</p>
-				<Button class="btn" id="btn1" type="Button" onclick="validar(0)">Encriptar</button>
-				<Button class="btn" id="btn2" type="Button" onclick="validar(1)">Desencriptar</button>
-			</form>
-		</section>
-		<section class="txt2 box">
-			<label for="input-texto">Procesando </label>
+	<div class="contenedor">
+		<header>
+			<label class="box2">Alura-ONE / Encriptar - Desencriptar / JavaScript</label>
+		</header>
+	  		<section class="main">
+	  			<form>
+	  			<!--<form id="form1" runat="server">  -->
+	  				<label for="input-texto">Solo se permiten letras minúsculas, sin acento</label>
+	   			</p>
+					<label>Mensaje Original:</label>
+					<input class="text-input" type="text" id="txt1" placeholder="Ingrese el texto a encriptar">
+					</p>
+					<Button class="btn" id="btn1" type="Button" onclick="validar(0)">Encriptar</button>
+					<Button class="btn" id="btn2" type="Button" onclick="validar(1)">Desencriptar</button>
+				</form>
+			</section>
+			<!-- <section class="txt2 box"> -->
+			<section class="main2">
+				<form>
+					<label for="input-texto">Procesando </label>
+					</p>
+					<label>Mensaje Convertido:</label> 
+					<input class="text-input" type="text" id="txt2" placeholder="Aqui aparecera el texto encriptado"></input>
+					<Button class="btn" id="btn3" type="Button" onclick="copiar()">Copiar</button>
+				</form>
+			</section>
 			</p>
-			<label>Mensaje Convertido:</label> 
-			<input class="text-input" type="text" id="txt2"></input>
-			<Button class="btn" id="btn3" type="Button" onclick="copiar()">Copiar</button>
-			<br>
-		</section>
-    </main>
-		</p>
-    <footer>
-    	<section class = "box2">
-    		<label>Desarrollado por Carlos Raúl López - solrac.gt - Guatemala, C.A.</label>
-    	</section>
-    </footer>
+	    <footer>
+	    	<section class = "box2">
+	    		<label>Desarrollado por Carlos Raúl López - solrac.gt - Guatemala, C.A.</label>
+	    	</section>
+	    </footer>
+    </div>
 </body>
 <script src = "js/index.js"></script>	
 </html>
